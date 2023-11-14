@@ -6,7 +6,7 @@ resources:
 
 # Patch Applications for commit pinning
 patches:
-   - target:
+  - target:
       kind: Application
       labelSelector: repo=cluster-config
     patch: |-
