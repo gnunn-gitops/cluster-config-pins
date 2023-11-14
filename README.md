@@ -20,8 +20,8 @@ have kustomize match the pins on a per repo basis.
 
 Diagramming the flow, it looks like this:
 
-ACM Policy (acm-hub-bootstrap HEAD)
-      ↓
-Cluster Config Pins (cluster-config-pins HEAD)
-      ↓
-Cluster Config (cluster-config TAG)
+    ACM Policy (acm-hub-bootstrap HEAD)
+         ↓
+    Cluster Config Pins (cluster-config-pins HEAD)
+         ↓
+    Cluster Config (cluster-config TAG)
