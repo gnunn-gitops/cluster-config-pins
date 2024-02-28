@@ -12,7 +12,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
-        value: v1.1.22
+        value: v1.1.26
   - target:
       kind: Application
       labelSelector: repo=acm-hub-bootstrap
