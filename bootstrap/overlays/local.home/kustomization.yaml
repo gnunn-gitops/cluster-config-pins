@@ -22,7 +22,7 @@ patches:
         value: dc6a546e76b28dcaaa8ba2127d20dd24973bf540
   - target:
       kind: Application
-      name: pipeline-operator
+      name: gitops
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
