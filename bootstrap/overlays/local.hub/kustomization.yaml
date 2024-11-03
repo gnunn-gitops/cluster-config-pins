@@ -34,3 +34,10 @@ patches:
       - op: replace
         path: /spec/source/targetRevision
         value: HEAD
+  - target:
+      kind: Application
+      name: pipeline-operator
+    patch: |-
+      - op: replace
+        path: /spec/source/targetRevision
+        value: HEAD
