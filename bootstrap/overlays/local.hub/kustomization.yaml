@@ -19,7 +19,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
-        value: v1.1.20
+        value: v1.1.21
   - target:
       kind: Application
       labelSelector: repo=gitops-catalog
