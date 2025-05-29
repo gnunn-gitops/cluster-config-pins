@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- github.com/gnunn-gitops/cluster-config/bootstrap/overlays/local.hub?ref=v1.4.8
+- github.com/gnunn-gitops/cluster-config/bootstrap/overlays/local.hub?ref=v1.4.9
 
 # Patch Applications for commit pinning
 patches:
@@ -12,7 +12,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
-        value: v1.4.8
+        value: v1.4.9
   - target:
       kind: Application
       labelSelector: repo=acm-hub-bootstrap
@@ -29,7 +29,7 @@ patches:
         value: dc6a546e76b28dcaaa8ba2127d20dd24973bf540
   - target:
       kind: Application
-      name: trusted-profile-analyzer-prereqs
+      name: trusted-profile-analyzer
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
