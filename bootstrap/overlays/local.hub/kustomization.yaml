@@ -29,6 +29,13 @@ patches:
         value: dc6a546e76b28dcaaa8ba2127d20dd24973bf540
   - target:
       kind: Application
+      name: llama-stack
+    patch: |-
+      - op: replace
+        path: /spec/source/targetRevision
+        value: HEAD
+  - target:
+      kind: Application
       name: trusted-profile-analyzer
     patch: |-
       - op: replace
