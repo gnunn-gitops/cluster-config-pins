@@ -34,3 +34,11 @@ patches:
       - op: replace
         path: /spec/source/targetRevision
         value: HEAD
+  - target:
+      kind: Application
+      name: llama-stack
+    patch: |-
+      - op: replace
+        path: /spec/source/targetRevision
+        value: HEAD
+
