@@ -43,7 +43,7 @@ patches:
         value: HEAD
   - target:
       kind: Application
-      name: odf-operator
+      name: noobaa
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
