@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - github.com/gnunn-gitops/cluster-config/bootstrap/overlays/local.hub?ref=v1.4.43
+  - github.com/gnunn-gitops/cluster-config/bootstrap/overlays/local.hub?ref=v1.4.44
 
 # Patch Applications for commit pinning
 patches:
@@ -12,7 +12,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/source/targetRevision
-        value: v1.4.43
+        value: v1.4.44
   - target:
       kind: Application
       labelSelector: repo=acm-hub-bootstrap
