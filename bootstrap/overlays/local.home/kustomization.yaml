@@ -41,3 +41,10 @@ patches:
       - op: replace
         path: /spec/source/targetRevision
         value: HEAD
+  - target:
+      kind: Application
+      name: external-secrets
+    patch: |-
+      - op: replace
+        path: /spec/source/targetRevision
+        value: HEAD
