@@ -34,4 +34,3 @@ patches:
       - op: replace
         path: /spec/source/targetRevision
         value: HEAD
-
